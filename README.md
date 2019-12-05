@@ -2,9 +2,10 @@
 
 https://atikrhaman.github.io/design-power/
 
-# Technolofy Used
+# Technology Used
 ### SCSS
 ### Prepros as SCSS Compiler
 ### BEM as naming convention
+### Flex-box
 ### Media Query for responsiveness
 
