@@ -79,9 +79,6 @@ body {
     color: #10131A;
     border: none; }
 
-.button > .btn--dev {
-  background: #ffffff; }
-
 .sub-heading {
   font-size: 18px;
   color: #10131A;
@@ -201,14 +198,12 @@ body {
     text-transform: uppercase;
     font-size: 18px; }
 
-.service-block {
-  margin-top: 60px; }
-
-.service-block {
+.service {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .service-block__item {
+  display: flex;
+  margin-top: 60px; }
+  .service__item {
     margin: 15px 15px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -227,22 +222,14 @@ body {
   color: #ffffff;
   padding: 20px;
   background: #424242;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+1,424242+100 */
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5b5b5b+0,424242+100 */
   background: #5b5b5b;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#757575+0,424242+100 */
   background: #757575;
-  /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover, #757575 0%, #424242 100%);
-  /* FF3.6-15 */
   background: -webkit-radial-gradient(center, ellipse cover, #757575 0%, #424242 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: -webkit-radial-gradient(center, ellipse, #757575 0%, #424242 100%);
   background: -o-radial-gradient(center, ellipse, #757575 0%, #424242 100%);
   background: radial-gradient(ellipse at center, #757575 0%, #424242 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#757575', endColorstr='#424242', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -325,6 +312,15 @@ body {
   .text-block__tab,
   .text-block-dev__tab {
     margin-bottom: 30px; }
+  .text-block__btn,
+  .text-block-dev__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
 
 .text-block::after {
   content: "";
@@ -406,8 +402,6 @@ button.btn--dev.tablink.tab-active {
   .footer__item {
     margin: 60px 15px 15px 15px;
     width: 25%; }
-  .footer__:last-child {
-    margin-right: 0; }
 
 .footer-text {
   margin: 20px 0;
@@ -513,6 +507,27 @@ button.btn--dev.tablink.tab-active {
     justify-content: center; }
     .header-content__info--regular {
       margin: 14px 0; }
+    .header-content__image {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .header-content__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 20px 0; }
 
   .header-content__image img {
     width: 60%; }
@@ -529,7 +544,7 @@ button.btn--dev.tablink.tab-active {
   .btn {
     padding: 12px 26px; }
 
-  .service-block {
+  .service {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -591,18 +606,15 @@ button.btn--dev.tablink.tab-active {
       text-align: center;
       margin-bottom: 20px; }
 
-  .socil-icon ul li {
-    padding: 0 25px; }
-
   .responsive-margin {
     margin-top: 60px; } }
 /* Porttait tablate */
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
-  .service-block {
+  .service {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    .service-block__item {
-      width: 46%; } }
+    .service__item {
+      width: 45%; } }
 /*LandScap Tablate */
 /* desktop */
 /* large desktop */

@@ -27,10 +27,6 @@ body {
     }
 }
 
-.button>.btn--dev {
-    background: $white;
-}
-
 .sub-heading {
     font-size: $sub-heading;
     color: $text-color;
@@ -156,16 +152,12 @@ body {
         text-transform: uppercase;
         font-size: $sub-heading;
     }
-
 }
 
 //Service section
-.service-block {
-    margin-top: 60px;
-}
-
-.service-block {
+.service {
     display: flex;
+    margin-top: 60px;
 
     &__item {
         margin: 15px 15px;
@@ -181,20 +173,12 @@ body {
     color: $white;
     padding: 20px;
     background: #424242;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+1,424242+100 */
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5b5b5b+0,424242+100 */
     background: #5b5b5b;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#757575+0,424242+100 */
     background: #757575;
-    /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #757575 0%, #424242 100%);
-    /* FF3.6-15 */
     background: -webkit-radial-gradient(center, ellipse cover, #757575 0%, #424242 100%);
-    /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse at center, #757575 0%, #424242 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#757575', endColorstr='#424242', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -267,7 +251,6 @@ body {
     background: $white;
     position: relative;
 
-
     &__title {
         font-size: $sub-heading;
         text-align: left;
@@ -281,6 +264,12 @@ body {
 
     &__tab {
         margin-bottom: 30px;
+    }
+
+    &__btn {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
     }
 }
 
@@ -298,8 +287,6 @@ body {
 }
 
 //testimonila
-
-
 .testimonials {
     display: flex;
     flex-wrap: wrap;
@@ -351,7 +338,6 @@ button.btn--dev.tablink.tab-active {
     border: none;
 }
 
-
 .tab-active {
     background: $primary-color;
     color: $white;
@@ -371,9 +357,6 @@ button.btn--dev.tablink.tab-active {
         width: 25%;
     }
 
-    &__:last-child {
-        margin-right: 0;
-    }
 }
 
 .footer-text {
