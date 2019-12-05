@@ -20,9 +20,10 @@ body {
     }
 
     &--dev {
-        padding: 15px;
-        background: $white;
+        padding: 12px;
+        background: $light-grey;
         color: $text-color;
+        border: none;
     }
 }
 
@@ -78,6 +79,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 100px 0;
 
     &__info {
         display: flex;
@@ -227,7 +229,6 @@ body {
     border: 40px solid transparent;
     border-top-color: #fff;
     border-left: 0;
-
 }
 
 .image-container {
@@ -344,10 +345,11 @@ body {
         padding: 14px;
         background: #757575;
     }
-
-
 }
 
+button.btn--dev.tablink.tab-active {
+    border: none;
+}
 
 
 .tab-active {
@@ -376,11 +378,11 @@ body {
 
 .footer-text {
     margin: 20px 0;
-    color: $light-grey;
+    color: $light-grey2;
 
     ul li {
         padding: 10px 0px;
-        border-bottom: 1px solid $light-grey;
+        border-bottom: 1px solid $light-grey2;
         cursor: pointer;
     }
 
@@ -389,7 +391,12 @@ body {
     }
 
     ul li a {
-        color: $light-grey;
+        color: $light-grey2;
+        cursor: pointer;
+    }
+
+    ul li a:hover {
+        color: $primary-color;
     }
 
     ul:last-child {
@@ -436,10 +443,17 @@ body {
 
 .socil-icon ul li {
     padding: 0 30px;
-    background: $dark-grey-deep;
+    background: $dark-grey;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+
 }
 
 .socil-icon ul li:hover {
-    color: $white;
+    color: $dark-grey;
     cursor: pointer;
+    background: $white;
 }

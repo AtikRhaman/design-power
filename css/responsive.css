@@ -1,0 +1,21 @@
+/* phone */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 32px; }
+
+  p {
+    font: 16px; }
+
+  .header-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+/* Porttait tablate */
+/*LandScap Tablate */
+/* desktop */
+/* large desktop */
+
+
+
+/*# sourceMappingURL=responsive.css.map */
